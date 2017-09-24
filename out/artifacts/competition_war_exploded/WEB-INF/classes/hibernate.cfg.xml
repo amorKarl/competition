@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://119.29.143.165:3306/competition</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">daily.123</property>
+        <mapping class="competition.po.TNewsEntity"/>
+        <mapping class="competition.po.TTopicsEntity"/>
+        <mapping class="competition.po.TTopicsDiscussEntity"/>
+        <mapping class="competition.po.TTopicsPublishEntity"/>
+        <mapping class="competition.po.TTradesPublishEntity"/>
+        <mapping class="competition.po.TTradesRecordEntity"/>
+        <mapping class="competition.po.TUsersEntity"/>
+        <mapping class="competition.po.TTradesScreenEntity"/>
+        <mapping class="competition.po.TUsersRecordEntity"/>
+        <mapping class="competition.po.VTradesPublishDetailEntity"/>
+        <mapping class="competition.po.VTopicPublishEntity"/>
+        <mapping class="competition.po.VTradeDetailEntity"/>
+        <mapping class="competition.po.TTopicsGoodEntity"/>
+        <mapping class="competition.po.VTopicDiscussEntity"/>
+        <!-- <property name="connection.username"/> -->
+        <!-- <property name="connection.password"/> -->
+        <!--<property name="connection.username">root</property>-->
+        <!--<property name="connection.password">daily.123</property>-->
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
