@@ -23,6 +23,7 @@
         <mapping class="competition.po.VTradeDetailEntity"/>
         <mapping class="competition.po.TTopicsGoodEntity"/>
         <mapping class="competition.po.VTopicDiscussEntity"/>
+        <mapping class="competition.po.VUserRankEntity"/>
         <!-- <property name="connection.username"/> -->
         <!-- <property name="connection.password"/> -->
         <!--<property name="connection.username">root</property>-->
